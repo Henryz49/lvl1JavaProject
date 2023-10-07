@@ -26,7 +26,7 @@ function update(){
 }
 
 function load(){
-    aProteins = parseInt(prompt("Enter Appetizer proteins in grams", 0), 10);
+    aProteins = parseInt(prompt("Enter Appetizer proteins in grams (do NOT click cancel for any of the popups)", 0), 10);
     aCarbs = parseInt(prompt("Enter Appetizer carbs in grams", 0),10);
     aFats = parseInt(prompt("Enter Appetizer fat in grams" ,0), 10);
     eProteins = parseInt(prompt("Enter Entree proteins in grams", 0),10);
