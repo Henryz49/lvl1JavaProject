@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+    <title>Calorie Counter</title>
+</head> 
+<body onload="load()">
+    <h1><u><strong>Calorie Counter</strong></u></h1>
+    <p id="mealCalories">Meal Calories: 0</p>
+    <!--Appetizers-->
+    <div id="aDisplay">
+        <h2>Appetizer</h2>
+        <p id="aCalories">Total amount of Calories: 0</p>
+        <p id="aProteins">Grams of Protein: 0</p>
+        <p id="aCarbs">Grams of Carbohydrates: 0</p>
+        <p id="aFats">Grams of Fat: 0</p>
+    </div>
+    <div id="aButtons">
+        <div class="plus1">
+            <button type="button" onclick="addInfo('appetizer', 'protein', 1)">+1g Protein</button>
+            <button type="button" onclick="addInfo('appetizer', 'carb', 1)">+1g Carbohydrate</button>
+            <button type="button" onclick="addInfo('appetizer', 'fat', 1)">+1g Fat</button>
+        </div>
+        <div class="plus5">
+            <button type="button" onclick="addInfo('appetizer', 'protein',5)">+5g Protein</button>
+            <button type="button" onclick="addInfo('appetizer', 'carb',5)">+5g Carbohydrate</button>
+            <button type="button" onclick="addInfo('appetizer', 'fat', 5)">+5g Fat</button>
+        </div>
+        <div class="minus1">
+            <button type="button" onclick="addInfo('appetizer', 'protein', -1)">-1g Protein</button>
+            <button type="button" onclick="addInfo('appetizer', 'carb', -1)">-1g Carbohydrate</button>
+            <button type="button" onclick="addInfo('appetizer', 'fat', -1)">-1g Fat</button>
+        </div>
+        <div class="minus5">
+            <button type="button" onclick="addInfo('appetizer', 'protein',-5)">-5g Protein</button>
+            <button type="button" onclick="addInfo('appetizer', 'carb',-5)">-5g Carbohydrate</button>
+            <button type="button" onclick="addInfo('appetizer', 'fat', -5)">-5g Fat</button>
+        </div>
+    </div>
+   
+    <!--Entree-->
+    <div id="eDisplay">
+        <h2>Entree</h2>
+        <p id="eCalories">Total amount of Calories: 0</p>
+        <p id="eProteins">Grams of Protein: 0</p>
+        <p id="eCarbs">Grams of Carbohydrates: 0</p>
+        <p id="eFats">Grams of Fat: 0</p>
+    </div>
+    <div id="eButtons">
+        <div class="plus1">
+            <button type="button" onclick="addInfo('entree', 'protein', 1)">+1g Protein</button>
+            <button type="button" onclick="addInfo('entree', 'carb', 1)">+1g Carbohydrate</button>
+            <button type="button" onclick="addInfo('entree', 'fat', 1)">+1g Fat</button>
+        </div>
+        <div class="plus5">
+            <button type="button" onclick="addInfo('entree', 'protein',5)">+5g Protein</button>
+            <button type="button" onclick="addInfo('entree', 'carb',5)">+5g Carbohydrate</button>
+            <button type="button" onclick="addInfo('entree', 'fat', 5)">+5g Fat</button>
+        </div>
+        <div class="minus1">
+            <button type="button" onclick="addInfo('entree', 'protein', -1)">-1g Protein</button>
+            <button type="button" onclick="addInfo('entree', 'carb', -1)">-1g Carbohydrate</button>
+            <button type="button" onclick="addInfo('entree', 'fat', -1)">-1g Fat</button>
+        </div>
+        <div class="minus5">
+            <button type="button" onclick="addInfo('entree', 'protein',-5)">-5g Protein</button>
+            <button type="button" onclick="addInfo('entree', 'carb',-5)">-5g Carbohydrate</button>
+            <button type="button" onclick="addInfo('entree', 'fat', -5)">-5g Fat</button>
+        </div>
+    </div>
+
+
+
+
+    <!--Dessert-->
+    <div id="dDisplay">
+        <h2>Dessert</h2>
+        <p id="dCalories">Total amount of Calories: 0</p>
+        <p id="dProteins">Grams of Protein: 0</p>
+        <p id="dCarbs">Grams of Carbohydrates: 0</p>
+        <p id="dFats">Grams of Fat: 0</p>
+    </div>
+    <div id="dButtons">
+        <div class="plus1">
+            <button type="button" onclick="addInfo('dessert', 'protein', 1)">+1g Protein</button>
+            <button type="button" onclick="addInfo('dessert', 'carb', 1)">+1g Carbohydrate</button>
+            <button type="button" onclick="addInfo('dessert', 'fat', 1)">+1g Fat</button>
+        </div>
+        <div class="plus5">
+            <button type="button" onclick="addInfo('dessert', 'protein',5)">+5g Protein</button>
+            <button type="button" onclick="addInfo('dessert', 'carb',5)">+5g Carbohydrate</button>
+            <button type="button" onclick="addInfo('dessert', 'fat', 5)">+5g Fat</button>
+        </div>
+        <div class="minus1">
+            <button type="button" onclick="addInfo('dessert', 'protein', -1)">-1g Protein</button>
+            <button type="button" onclick="addInfo('dessert', 'carb', -1)">-1g Carbohydrate</button>
+            <button type="button" onclick="addInfo('dessert', 'fat', -1)">-1g Fat</button>
+        </div>
+        <div class="minus5">
+            <button type="button" onclick="addInfo('dessert', 'protein',-5)">-5g Protein</button>
+            <button type="button" onclick="addInfo('dessert', 'carb',-5)">-5g Carbohydrate</button>
+            <button type="button" onclick="addInfo('edessert', 'fat', -5)">-5g Fat</button>
+        </div>
+    </div>
+    <br>
+    <br>
+    <button type="button" onclick="location.href = '#top' ; reset()"> Click here to reset everything!</button>
+    <button type="button" id="toTop" onclick= "location.href='#top'"> Back to top </button>
+</body>
+</html>

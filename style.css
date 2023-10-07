@@ -1,0 +1,63 @@
+html{
+    background-color: rgb(48, 47, 47);
+    color: white;
+    margin: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+h1{
+    margin: 10px;
+    margin-left: 40px;
+    align-self: center;
+    color: rgb(206, 229, 248);
+    font-size: 50px;
+}
+
+h2{
+    font-style: italic;
+    font-size: 30px;
+}
+button{
+    border: 2x solid rgb(184, 219, 249);
+    background-color: rgb(184, 219, 249);
+    color: black;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(48, 47, 47);
+    color: rgb(184, 219, 249);
+  
+}
+p{
+    font-weight: bold;
+    font-size: 20px;
+
+}
+.plus1{
+    display: flex;
+    padding-bottom: 10px;
+    gap: 10px;
+}
+.plus5{
+    display: flex;
+    padding-bottom: 10px;
+    gap: 10px;
+}
+.minus1{
+    display: flex;
+    padding-bottom: 10px;
+    gap: 10px;
+}
+.minus5{
+    display: flex;
+    padding-bottom: 10px;
+    gap: 10px;
+}
+
+#mealCalories{
+    font-size: 35px;
+}
+
+
+
